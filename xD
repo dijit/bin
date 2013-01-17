@@ -1,0 +1,2 @@
+#!/bin/bash
+printf "\t\t\t\033[01;31mLOL WRONG WINDOW\033[0;0m\n"
