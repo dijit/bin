@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#!/bin/bash
-
 function randpass
 {
     echo -n $(</dev/urandom tr -dc A-Za-z0-9 | head -c8)
