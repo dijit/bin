@@ -1,0 +1,14 @@
+#!/bin/bash
+if [ "$1" == "" ] ; then
+        COLS=`tput cols`
+elif [ "$1" == "--help" ] ; then
+        echo "$0: Prints a red line across the screen. or $0 <##> for a specific width."
+        echo "$0:   br ; grep -ir foo *  -- place a marker to see where results begin / end."
+        echo "$0:   br 80 ; cat file     -- use to check for overly long lines."
+        exit
+else
+        COLS=$1
+fi
+LINE=""
+for (( x=0 ; x<$COLS ; x++ ));  do LINE="$LINE-" ; done
+echo -e '\033[47;0m'"\033[1m$LINE\033[0m"
