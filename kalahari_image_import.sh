@@ -44,19 +44,8 @@ fi
 # }}}
 
 # Define Variables {{{
-CONTENTPATH="/web/01/tmp/kalaharing/";
+CONTENTPATH="${cust_root}/tmp/kalaharing/";
 TMP="/tmp";
-
-# }}}
-
-# I need some FTP declarations, set ups and shizz {{{
-
-#echo ~/.netrc << EOT
-#default login kalaharingintg password cuOkdakpin8
-#EOT
-
-#FTPHOST=cust-ftp.live.venda.com
-#chmod 0600 ~/.netrc
 
 # }}}
 
